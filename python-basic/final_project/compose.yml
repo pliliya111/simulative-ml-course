@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      - "0.0.0.0:5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    volumes:
+      - type: volume
+        source: postgres_data
+        target: /var/lib/postgresql/data
+    command: >
+      sh -lc '
+        echo "CREATE DATABASE grader;" \
+          > /docker-entrypoint-initdb.d/00-init.sql;
+        exec docker-entrypoint.sh postgres
+      '
+
+volumes:
+  postgres_data:

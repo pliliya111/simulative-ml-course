@@ -1,0 +1,77 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="aioamqp" />
+          <option value="aiodns" />
+          <option value="aiohttp" />
+          <option value="aiohttp-cors" />
+          <option value="aiohttp-jinja2" />
+          <option value="aiomongo" />
+          <option value="aiosocial" />
+          <option value="apispec" />
+          <option value="astroid" />
+          <option value="async-timeout" />
+          <option value="asyncpool" />
+          <option value="attrs" />
+          <option value="brotlipy" />
+          <option value="cchardet" />
+          <option value="certifi" />
+          <option value="cffi" />
+          <option value="chardet" />
+          <option value="click" />
+          <option value="dacite" />
+          <option value="guavahash" />
+          <option value="idna" />
+          <option value="isort" />
+          <option value="Jinja2" />
+          <option value="ktsaccessors" />
+          <option value="ktsutils" />
+          <option value="ktsbot" />
+          <option value="ktstools" />
+          <option value="lazy-object-proxy" />
+          <option value="MarkupSafe" />
+          <option value="marshmallow" />
+          <option value="marshmallow-dataclass" />
+          <option value="marshmallow-enum" />
+          <option value="mccabe" />
+          <option value="multidict" />
+          <option value="mypy-extensions" />
+          <option value="pamqp" />
+          <option value="prometheus-client" />
+          <option value="pycares" />
+          <option value="pycparser" />
+          <option value="pylint" />
+          <option value="pymongo" />
+          <option value="python-consul" />
+          <option value="python-dotenv" />
+          <option value="pytz" />
+          <option value="PyYAML" />
+          <option value="requests" />
+          <option value="sentry-sdk" />
+          <option value="six" />
+          <option value="specialhub" />
+          <option value="swagger-ui-bundle" />
+          <option value="toml" />
+          <option value="typing-extensions" />
+          <option value="typing-inspect" />
+          <option value="ujson" />
+          <option value="urllib3" />
+          <option value="wrapt" />
+          <option value="yarl" />
+          <option value="abusekts" />
+          <option value="scipy" />
+          <option value="asynctnt" />
+          <option value="aiobotocore" />
+          <option value="aiofiles" />
+          <option value="python-magic" />
+          <option value="typeguard" />
+          <option value="imgkit" />
+          <option value="pillow" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
