@@ -3,13 +3,7 @@ import ssl
 from datetime import datetime
 from email.message import EmailMessage
 
-from config import (
-    RECIPIENT_EMAIL,
-    SENDER_EMAIL,
-    SENDER_PASSWORD,
-    SMTP_PORT,
-    SMTP_SERVER,
-)
+from config import settings
 
 
 def send_report(total_raw: int, total_valid: int, start: datetime, end: datetime) -> None:
@@ -27,10 +21,10 @@ def send_report(total_raw: int, total_valid: int, start: datetime, end: datetime
     msg = EmailMessage()
     msg.set_content(body)
     msg["Subject"] = subject
-    msg["From"] = SENDER_EMAIL
-    msg["To"] = RECIPIENT_EMAIL
+    msg["From"] = settings.sender_email
+    msg["To"] = settings.recipient_email
 
     context = ssl.create_default_context()
-    with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, context=context) as server:
-        server.login(SENDER_EMAIL, SENDER_PASSWORD)
+    with smtplib.SMTP_SSL(settings.smtp_server, settings.smtp_port, context=context) as server:
+        server.login(settings.sender_email, settings.sender_password)
         server.send_message(msg)

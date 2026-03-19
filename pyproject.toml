@@ -8,5 +8,7 @@ dependencies = [
     "google-auth>=2.49.1",
     "gspread>=6.2.1",
     "psycopg2-binary>=2.9.11",
+    "pydantic-settings>=2.13.1",
     "requests>=2.32.5",
+    "tenacity>=9.1.4",
 ]
